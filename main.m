@@ -1,15 +1,14 @@
 clear all; clc;
 format shortE;
 
-GEVP = 1;
-Nystrom = 1;
-Jacobi = 1;
+GEVP = 1; % ideal two-level preconditioner
+Nystrom = 1; % Nyström--Schur preconditioner
+Jacobi = 1; % One-level preconditioner
 hsl = 0; % Matlab interface for HSL_MI28 is required
-iChol = 1;
+iChol = 1; % Matlab incomplete Cholesky
 
-q = 0;
-k = 20;
-p = 0;
+k = 20; % Dimension of the deflation space (the rank of the correction term)
+p = 0; % Oversampling parameter for Nyström's method
 
 % params for the approximate solution of S_I system
 mid_tol = 0.1;
@@ -19,20 +18,23 @@ rootdir = './';
 addpath(rootdir);
 
 % solver
-tol = 1e-6;
-MaxIt = 1500;
+tol = 1e-6;    % convergence tolerance
+MaxIt = 1500;  % maximum iteration count
 
 % configuration
-level = 6;
+level = 6;     % 2^level is the number of subdomains (number of diagonal blocks)
 
 % setup
 nbSubdomain = 2^level;
 N = nbSubdomain;
-
 nbPartition = nbSubdomain + 1;
 
-% read matrix
-load s3rmt3m3.mat; AP = Problem.A;
+% read matrix:
+%%%%%%%%%%%%%%%%%%%%%
+%To change the matrix load the matrix required and store it in the variable AP
+load s3rmt3m3.mat;
+AP = Problem.A;
+%%%%%%%%%%%%%%%%%%%%%
 
 rng(1);
 bP = randn(length(AP),1);

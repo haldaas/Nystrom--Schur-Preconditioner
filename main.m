@@ -110,7 +110,7 @@ if(GEVP)
 end
 %%%%%%%%%%%%%%%%%%%%%%
 if(Nystrom)
-    [Z, Sig, V] = my_nystrom_randomized_svd_op(Op1, ng, k, p);
+    [Z, Sig, V] = my_nystrom(Op1, ng, k, p);
     Z = Agm1(Z);
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%
     M1 = @(x) Agm1(x) + Z * (Sig*(Z'*x));

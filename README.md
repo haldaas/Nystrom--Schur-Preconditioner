@@ -6,7 +6,8 @@ This code is for reproducing some numerical experiments in [1] and __SHOULD NOT_
 ## Introduction
 This is a proof of concept Matlab code for the two-level Nyström--Schur preconditioner (NS-prec) proposed in [1]
 
-The code works on Linux and mac platforms. To run on windows, a Matlab interface for metis 4 on windows is required (this is not tested).
+The code requires a Matlab interface for metis 4. Download [metis 4](http://glaros.dtc.umn.edu/gkhome/fetch/sw/metis/OLD/metis-4.0.3.tar.gz) and [metismex.c](https://www.cs.ubc.ca/~rbridson/download/metismex.c) then compile it on your platform.
+
 To run comparisons against [HSL_MI28](https://www.hsl.rl.ac.uk/catalogue/hsl_mi28.html), the [Matlab interface for HSL_MI28](https://www.hsl.rl.ac.uk/catalogue/hsl_mi28.html) is required (a free academic licence can be obtained; see [licence](https://www.hsl.rl.ac.uk/download/HSL_MI28/2.2.2/)).
 
 ## Running test example

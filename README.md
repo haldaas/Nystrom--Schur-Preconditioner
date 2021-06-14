@@ -29,7 +29,6 @@ The repository includes the test matrix s3rmt3m3. To run the comparison on anoth
         Hussam Al Daas and Tyrone Rees and Jennifer Scott
     
  To cite this work:
-
     @misc{daas2021twolevel,
       title={Two-level Nystr\"om--Schur preconditioner for sparse symmetric positive definite matrices}, 
       author={Hussam Al Daas and Tyrone Rees and Jennifer Scott},

@@ -1,8 +1,9 @@
 # Nystrom--Schur-Preconditioner
 
 ## __IMPORTANT:__
-This code is for reproducing some numerical experiments in [1] and should not be used otherwise.
+This code is for reproducing some numerical experiments in [1] and __SHOULD NOT__ be used otherwise.
 
+## Introduction
 This is a proof of concept Matlab code for the two-level Nyström--Schur preconditioner (NS-prec) proposed in [1]
 
 The code works on Linux and mac platforms. To run on windows, a Matlab interface for metis 4 on windows is required (this is not tested).

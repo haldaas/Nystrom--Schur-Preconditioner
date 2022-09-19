@@ -31,10 +31,15 @@ The repository includes the test matrix s3rmt3m3. To run the comparison on anoth
     
  To cite this work:
  
-    @misc{daas2021twolevel,
-      title={Two-level Nystr\"om--Schur preconditioner for sparse symmetric positive definite matrices}, 
-      author={Hussam Al Daas and Tyrone Rees and Jennifer Scott},
-      year={2021},
-      eprint={2101.12164},
-      archivePrefix={arXiv},
-      primaryClass={math.NA}}
+    @article{doi:10.1137/21M139548X,
+    author = {Al Daas, Hussam and Rees, Tyrone and Scott, Jennifer},
+    title = {Two-Level Nyström--Schur Preconditioner for Sparse Symmetric Positive Definite Matrices},
+    journal = {SIAM Journal on Scientific Computing},
+    volume = {43},
+    number = {6},
+    pages = {A3837--A3861},
+    year = {2021},
+    doi = {10.1137/21M139548X},
+    URL = {https://doi.org/10.1137/21M139548X},
+    eprint = {https://doi.org/10.1137/21M139548X}
+    }
